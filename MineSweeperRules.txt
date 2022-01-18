@@ -1,0 +1,48 @@
+*********************************************************
+[92m---------------------- HOW TO PLAY ----------------------[0m
+*********************************************************
+
+[92mResize the console if this doesn't show up properly.[0m
+
+[92mGoal:[0m
+Make your way across the board to the key without tripping any of the mines. Points are awarded for speed, extra lives on winning and accurately flagging mines. You will automatically be placed on the top left tile at the beginning of the game. The key will be under the bottom right tile.
+
+[92mMaking a move:[0m
+Movement is allowed in any direction. A move can be more than one tile's length, but you will uncover all the tiles you pass on the way. The tile that you are standing on at the time will be displayed at the top of the screen, because it will be obscured by the emoji representing your place on the board.
+
+[92mKeymap:[0m
+  R T Y         [ Up Left ] [ Up ] [ Up Right ]
+  F   H   ==>   [  Left   ] [You ] [  Right   ]
+  V B N         [Down Left] [Down] [Down Right]
+
+[92mFlagging a square:[0m
+You may flag any tile that you wish. You do not need to be near the square to flag it.
+
+[92mBoard:[0m
+You can choose one of the pre-set board sizes (9x9, 16x16, 30x16) or create a custom board. Your intial score is the number of tiles on your board. Your score will decrease with time and incorrectly flagged tiles, and increase with correctly flagged tiles and extra lives on winning. 
+
+[92mTimer:[0m
+This will be displayed at the top of the board. The faster you reach the key, the higher your score. The displayed time is only refreshed when you make a move.
+
+[92mMine Count:[0m
+This will be displayed at the top of the board. The mine count will decrease every time you flag a square, whether or not it actually has a mine underneath. The number of mines on a board will be 1/5 of the total tiles on the board, rounded if the number of tiles is not divisible by 5.
+
+[92mTiles:[0m 
+Green tiles have yet to be uncovered. Brown tiles and numbered ones are tiles that you have already uncovered. A tile without a number on it has no mines in the surrounding 8 tiles. If you land on a zero mine tile, all the surrounding tiles will also be uncovered for you automatically.
+
+[92mNumbers:[0m
+Each number tells you how many mines are in the surrounding 8 squares. These numbers will help you decide which squares are safe to move to.
+
+[92mFlags:[0m
+Use flags to mark tiles with mines under them. Points are awarded for the number of mines you correctly flag. Don't flag a tile you don't think has a mine, through. That will lose you points. You can't move onto a flagged tile.
+
+[92mLives:[0m
+Each life you collect will buffer you against one mine. Try not to lose them, though. Points are awarded for clearing the level with extra lives. One life will be available on the board for every 80 tiles. Lives will only be present on tiles with a zero mine count in the surrounding tiles.
+Note : If you choose to replay a game that you lost, lives that you collected are not guaranteed to be in the same place when the board resets.
+
+[92mScoring:[0m
+At the end of the game, your score will be:
+
+  # Tiles x (1 + (# Lives x 0.25))
+  -------------------------------- + ((# Correct Flags - # Wrong Flags) x 3)
+  log (Time in Seconds)
